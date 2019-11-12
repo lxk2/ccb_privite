@@ -11,7 +11,7 @@ import NProgress from 'nprogress'
 import 'nprogress/nprogress.css'
 
 import Vant from 'vant'
-import 'vant/lib/index.css'
+import 'vant/lib/index.less'
 Vue.use(Vant)
 
 // 简单配置
