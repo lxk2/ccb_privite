@@ -13,7 +13,10 @@ export default {
   data,
   methods,
   created () {
-
+    this.$dialog.confirm({
+      title: '提示',
+      message: '呵呵哒'
+    })
   },
   mounted () {
 
