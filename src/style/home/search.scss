@@ -1,0 +1,23 @@
+@import '../comm.scss';
+
+.van-search {
+  // background: #f7f7f7!important;
+}
+
+.eq {
+  .block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 25px;
+    .title {
+      font-size: 15px;
+      line-height: 1;
+      color: #333;
+      font-weight: bold;
+    }
+  }
+  .search-grid {
+    margin-top: 18px;
+  }
+}

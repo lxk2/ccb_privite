@@ -1,2 +1,60 @@
 @import '../comm.scss';
 
+.list {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 10px;
+  background: #fff;
+  .item {
+    width: 100%;
+    border-bottom: 1px solid #dcdcdc;
+    padding: 15px 0;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    .left {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+      }
+    }
+    .right {
+      width: 307px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-sizing: border-box;
+      padding-left: 13px;
+      .block {
+        .title {
+          font-size: 15px;
+          line-height: 1;
+          color: #000;
+          font-weight: bold;
+        }
+        .info {
+          padding-top: 10px;
+          font-size: 12px;
+          line-height: 21px;
+          color: #9b9b9b;
+        }
+      }
+    }
+  }
+}
+
+.van-search {
+  background: transparent!important;
+  position: absolute!important;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}

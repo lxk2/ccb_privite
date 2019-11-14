@@ -10,9 +10,16 @@ import config from './utils/config'
 import NProgress from 'nprogress'
 import 'nprogress/nprogress.css'
 
-import Vant from 'vant'
+import BackTop from './components/backTop'
+
+import Vant, { Lazyload } from 'vant'
 import 'vant/lib/index.less'
 Vue.use(Vant)
+Vue.use(Lazyload, {
+  lazyComponent: true
+})
+
+Vue.use(BackTop)
 
 // 简单配置
 NProgress.inc(0.2)

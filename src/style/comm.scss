@@ -1,0 +1,22 @@
+#app {
+  width: 10rem;
+  margin: 0 auto;
+  background: #fff;
+}
+
+.container {
+  width: 355px;
+  margin: 0 auto;
+}
+
+.search-grid .van-grid-item__content {
+  background: #f4f4f4!important;
+  padding-top: 0.18rem;
+  padding-bottom: 0.18rem;
+}
+.search-grid .van-grid-item__content:active .van-grid-item__text {
+  color: #fff;
+}
+.search-grid .van-grid-item__content:active {
+  background: #1989fa!important;
+}
