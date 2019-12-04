@@ -1,7 +1,12 @@
 <template>
   <div id="app">
-    <router-view/>
-    <van-tabbar ref="tabbar" v-if="tabbarNameList.indexOf($route.name) !== -1" v-model="active" :safe-area-inset-bottom="true" :route="true">
+    <transition
+      enter-active-class="animated fadeInRight"
+      leave-active-class="animated fadeOutLeft"
+    >
+      <router-view/>
+    </transition>
+    <van-tabbar ref="tabbar" v-show="tabbarNameList.indexOf($route.name) !== -1" v-model="active" :safe-area-inset-bottom="true" :route="true">
       <van-tabbar-item name="home" icon="home-o" to="/">首页</van-tabbar-item>
       <van-tabbar-item name="community" icon="comment-o" to="/community/index">微社区</van-tabbar-item>
       <van-tabbar-item name="message" icon="chat-o" info="5" to="/message/index">消息</van-tabbar-item>
@@ -34,16 +39,17 @@ export default {
   },
   created () {
     this.SET_SCROLLHEIGHT(document.body.scrollHeight)
-    console.log(this.$route)
   },
   mounted () {
+    document.body.addEventListener('touchstart', function () {}) // 需要在按钮元素或body/html上绑定一个touchstart事件才能激活:active状态
     this.$nextTick(() => {
-      this.SET_TABBAR_HEIGHT(this.$refs.tabbar.$el.offsetHeight)
+      if (this.$refs.tabbar) this.SET_TABBAR_HEIGHT(this.$refs.tabbar.$el.offsetHeight)
     })
   },
   computed: {
     ...mapState([
-      'scrollHeight'
+      'scrollHeight',
+      'xLoading'
     ])
   }
 }

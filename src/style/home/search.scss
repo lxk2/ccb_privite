@@ -21,3 +21,44 @@
     margin-top: 18px;
   }
 }
+
+.emptySearch {
+  .kefu {
+    height: 150px;
+    padding-top: 25px;
+    .x-icon {
+      width: 74px;
+      height: 74px;
+      display: flex;
+      box-sizing: border-box;
+      border: 3px solid #1989fa;
+      border-radius: 50%;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      svg {
+        display: block;
+        width: 60%;
+        height: 60%;
+      }
+    }
+    .tips {
+      font-size: 14px;
+      line-height: 1;
+      text-align: center;
+      color: #999;
+      padding-top: 18px;
+    }
+  }
+  .top-title {
+    height: 24px;
+    display: flex;
+    align-items: center;
+    border-left: 5px solid #1989fa;
+    padding-left: 5px;
+    font-size: 15px;
+    line-height: 1;
+    color: #000;
+    font-weight: bold;
+  }
+}

@@ -64,7 +64,6 @@ export default {
       this.$emit('click')
     },
     scrollTop (el, from = 0, to, duration = 500, endCallback) {
-      console.log(el, from, to, duration)
       this.el = el
       let lastTime = 0
       let vendors = ['webkit', 'moz']

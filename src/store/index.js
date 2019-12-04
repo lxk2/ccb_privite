@@ -12,7 +12,8 @@ export default new Vuex.Store({
     userInfo: {},
     scrollHeight: 0, // 网页正文高度
     searchKeyword: '', // 搜索keyword
-    tabbarHeight: 0 // tabbar 高度
+    tabbarHeight: 0, // tabbar 高度
+    xLoading: true
   },
   mutations: {
     SET_TOKEN: (state, token) => {
@@ -30,6 +31,13 @@ export default new Vuex.Store({
     }
   },
   actions: {
+    getScrollHeight: ({ commit }, value) => {
+      return new Promise((resolve, reject) => {
+        setTimeout(() => {
+
+        })
+      })
+    },
     login: ({ commit }) => {
 
     },
@@ -41,7 +49,7 @@ export default new Vuex.Store({
         removeToken()
       })
     },
-    onSearch: ({ commit }, keyword) => {
+    toSearch: ({ commit }, keyword) => {
       return new Promise((resolve, reject) => {
         http.request({
           url: '',

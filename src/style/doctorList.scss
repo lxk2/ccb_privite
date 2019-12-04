@@ -1,0 +1,95 @@
+.doctorList {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 10px;
+  background: #fff;
+  .doctorItem {
+    border-bottom: 1px solid #f3f3f3;
+    padding: 15px 0 18px;
+    display: flex;
+    align-items: flex-start;
+    .left {
+      .avatar {
+        width: 86px;
+        height: 86px;
+        margin: 0 auto;
+        text-align: center;
+      }
+      .star {
+        text-align: center;
+        margin-top: 10px;
+      }
+    }
+    .right {
+      margin-left: 10px;
+      margin-top: 5px;
+      width: 261.5px;
+      .name-block {
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        .name {
+          font-size: 17px;
+          line-height: 1;
+          color: #000;
+          font-weight: bold;
+        }
+        .subject {
+          font-size: 13px;
+          line-height: 1;
+          color: #6d6d6d;
+          margin-left: 10px;
+        }
+      }
+      .hospital {
+        font-size: 14px;
+        line-height: 1;
+        color: #676767;
+        margin-top: 10px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+      }
+      .tags {
+        margin-top: 10px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        span {
+          margin-left: 5px;
+          &:first-child {
+            margin-left: 5px;
+          }
+        }
+      }
+      .goodAt {
+        font-size: 14px;
+        line-height: 1;
+        color: #676767;
+        margin-top: 10px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+      }
+      .x-price {
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+        .advisory-num {
+          margin-left: 10px;
+          color: #676767;
+          line-height: 1;
+          font-size: 12px;
+        }
+        .collection-num {
+          margin-left: 10px;
+          color: #676767;
+          line-height: 1;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}

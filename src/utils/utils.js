@@ -13,7 +13,17 @@ function isWeiXin () {
   }
 }
 
+function fmtNumber2k (number) {
+  let isNumber = typeof number === 'number' && !isNaN(number)
+  if (!isNumber) return 0
+  if (number > 1000) {
+    return ((Math.floor(number * 100) / 100) / 100) + 'k'
+  }
+  return Math.floor(number * 100) / 100
+}
+
 export default {
   isMobile,
-  isWeiXin
+  isWeiXin,
+  fmtNumber2k
 }

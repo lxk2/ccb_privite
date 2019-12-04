@@ -1,6 +1,5 @@
 export default {
   onLoad () {
-    console.log(1)
     setTimeout(() => {
       this.list += 7
       this.loading = false
@@ -17,5 +16,10 @@ export default {
   },
   onCancel () {
 
+  },
+  toSearch () {
+    this.$router.push({
+      path: '/home/search'
+    })
   }
 }
