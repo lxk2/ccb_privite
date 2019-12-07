@@ -85,6 +85,7 @@
 <script>
 import data from './data'
 import methods from './methods'
+import nutBacktop from '@/components/backTop'
 import { mapState } from 'vuex'
 
 export default {
@@ -103,6 +104,9 @@ export default {
       'searchKeyword',
       'tabbarHeight'
     ])
+  },
+  components: {
+    nutBacktop
   }
 }
 </script>

@@ -11,7 +11,7 @@ import NProgress from 'nprogress'
 import 'nprogress/nprogress.css'
 import animate from 'animate.css'
 
-import BackTop from './components/backTop'
+// import BackTop from './components/backTop'
 import Price from './components/price'
 
 import Vant, { Lazyload } from 'vant'
@@ -21,7 +21,7 @@ Vue.use(Lazyload, {
   lazyComponent: true
 })
 
-Vue.use(BackTop)
+// Vue.use(BackTop)
 Vue.use(Price)
 Vue.use(animate)
 
